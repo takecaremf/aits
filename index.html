@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Affordable Island Transportion services(Template)</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="Tour operator template based on Affordable Island Transport Services. Replace placeholder text, images and contact details with client's content." />
+  <style>
+    :root{--accent:#0b78a6;--muted:#666;--max:1100px}
+    *{box-sizing:border-box}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;smooth-font-scaling:antialiased;margin:0;color:#222;line-height:1.45}
+    .container{max-width:var(--max);margin:0 auto;padding:24px}
+    header{background:#fff;box-shadow:0 2px 6px rgba(0,0,0,0.06);position:sticky;top:0;z-index:50}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:12px 24px}
+    .brand{display:flex;gap:12px;align-items:center}
+    .brand img{height:44px;width:44px;object-fit:cover;border-radius:6px}
+    nav ul{list-style:none;display:flex;gap:16px;margin:0;padding:0}
+    nav a{text-decoration:none;color:var(--muted);font-weight:600}
+    .hero{background:linear-gradient(0deg, rgba(11,120,166,0.06), rgba(11,120,166,0.02));padding:40px 0}
+    .hero-grid{display:grid;grid-template-columns:1fr 320px;gap:24px;align-items:center}
+    .hero h1{margin:0 0 8px;font-size:28px;color:var(--accent)}
+    .hero p{margin:0 0 16px;color:var(--muted)}
+    .card{background:#fff;border-radius:10px;padding:18px;box-shadow:0 6px 18px rgba(12,25,40,0.04)}
+    .services{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:18px}
+    .service h3{margin:0 0 8px}
+    .testimonials{margin-top:28px}
+    blockquote{background:#f9f9fb;padding:12px 16px;border-left:4px solid var(--accent);margin:12px 0}
+    footer{margin-top:40px;padding:24px 0;color:var(--muted);font-size:14px}
+    @media (max-width:800px){.hero-grid{grid-template-columns:1fr} nav ul{display:none}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <img src="images/aits.jpg" alt="Company Logo">
+        <div>
+          <strong>Affordable Island Transportation Services</strong>
+          <div style="font-size:12px;color:var(--muted)">Discover Bermuda's Beauty</div>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div>
+          <h1>Unforgettable tours!</h1>
+          <p><em>Minibus tours leaving from Heritage Wharf & King's Wharf ONLY. All tours start 9am — if the ship is late tours will start 1 hour after arrival. Refund up until 48 hours before tour.</em></p>
+
+          <div class="card">
+            <h2>Exclusive Bermuda Experiences</h2>
+            <p style="color:var(--muted)">Convenient & timely service, comfortable air-conditioned minibuses & taxis, breathtaking views — perfect for families & groups.</p>
+            <ul>
+              <li>Convenient & Timely Service</li>
+              <li>Comfortable & Air-Conditioned Mini buses & Taxis</li>
+              <li>Breathtaking Views</li>
+            </ul>
+          </div>
+        </div>
+
+        <aside class="card">
+          <h3>Book a Tour</h3>
+          <p style="margin:6px 0;color:var(--muted)">Select a tour and contact us to reserve seats. We can accommodate group bookings.</p>
+          <form id="bookingForm">
+            <label style="display:block;margin-bottom:8px; font-weight:600">Tour</label>
+            <select name="tour" style="width:100%;padding:8px;margin-bottom:8px">
+              <option>3-Hour Island Tour — $60pp</option>
+              <option>5-Hour Heritage Tour — $85pp</option>
+              <option>Horseshoe Bay Shuttle — $19pp</option>
+            </select>
+            <label style="display:block;margin-bottom:8px; font-weight:600">Date</label>
+            <input type="date" name="date" style="width:100%;padding:8px;margin-bottom:8px" />
+            <label style="display:block;margin-bottom:8px; font-weight:600">Passengers</label>
+            <input type="number" min="1" value="1" style="width:100%;padding:8px;margin-bottom:12px" />
+            <button type="submit" style="width:100%;padding:10px;border-radius:8px;border:0;background:var(--accent);color:#fff;font-weight:700">Request Booking</button>
+          </form>
+        </aside>
+      </div>
+    </section>
+
+    <section id="about" class="container">
+      <h2>About Us</h2>
+      <p style="color:var(--muted)">Welcome to our premier tour company in Bermuda! With over 20 years of touring experience, we offer planned 3-hour and 5-hour tours, wedding packages, and beach trips. Replace this paragraph with the client's actual about copy.</p>
+    </section>
+
+    <section id="services" class="container">
+      <h2>Services</h2>
+      <div class="services">
+        <article class="card service">
+          <h3>3-Hour Island Tour — $60pp</h3>
+          <p style="color:var(--muted)">Explores Bermuda’s key attractions and hidden gems in a 3-hour guided tour. Minibus - Group Tour (Heritage & Kings Wharf only).</p>
+        </article>
+
+        <article class="card service">
+          <h3>5-Hour Heritage Tour — $85pp</h3>
+          <p style="color:var(--muted)">A comprehensive 5-hour tour through Bermuda’s history, beaches, and notable architecture. Good for groups and families.</p>
+        </article>
+
+        <article class="card service">
+          <h3>Horseshoe Bay Shuttle — $19pp</h3>
+          <p style="color:var(--muted)">Round trip shuttle to Horseshoe Bay Beach. Limited seating; multiple daily departures.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="testimonials" class="container testimonials">
+      <h2>Testimonials</h2>
+      <blockquote>
+        "The 5-hour tour was absolutely breathtaking. Our guide was knowledgeable and friendly." <br><small>- John Smith, Happy tourist</small>
+      </blockquote>
+      <blockquote>
+        "Our friends had the best time. Everything was perfect, from the beaches to the service."<br><small>- Emma Browne, Cruise ship passenger</small>
+      </blockquote>
+      <blockquote>
+        "The 3-hour tour was just what we needed to see Bermuda's highlights."<br><small>- Liam Johns, Satisfied traveler</small>
+      </blockquote>
+    </section>
+
+    <section id="contact" class="container">
+      <h2>Contact</h2>
+      <div class="card" style="display:flex;gap:18px;align-items:flex-start;flex-wrap:wrap">
+        <div style="flex:1;min-width:220px">
+          <h4>Location</h4>
+          <p style="color:var(--muted)">Dockyard Terrace, Bermuda</p>
+
+          <h4>Email</h4>
+          <p style="color:var(--muted)">book@affordableislandtransport.com</p>
+
+          <h4>Hours</h4>
+          <p style="color:var(--muted)">Mon-Fri — 08:00-19:00</p>
+        </div>
+
+        <form style="flex:1;min-width:220px" id="contactForm">
+          <label style="display:block;margin-bottom:6px;font-weight:600">Name</label>
+          <input type="text" required style="width:100%;padding:8px;margin-bottom:8px" />
+          <label style="display:block;margin-bottom:6px;font-weight:600">Email</label>
+          <input type="email" required style="width:100%;padding:8px;margin-bottom:8px" />
+          <label style="display:block;margin-bottom:6px;font-weight:600">Message</label>
+          <textarea rows="4" style="width:100%;padding:8px;margin-bottom:8px"></textarea>
+          <button type="submit" style="padding:10px 14px;border:0;background:var(--accent);color:#fff;border-radius:8px;font-weight:700">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container">
+    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap">
+      <div>© <span id="year"></span> Affordable Island Transport Services — All rights reserved</div>
+      <div style="color:var(--muted)">Designed for client — replace with actual company details</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('bookingForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      alert('Booking request sent — integrate with email or CMS to make this live.');
+    });
+    document.getElementById('contactForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      alert('Message sent — integrate with email or CMS to make this live.');
+    });
+  </script>
+</body>
+</html>

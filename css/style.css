@@ -1,0 +1,52 @@
+/* Typography Style Inspired by Affordable Island Transport Services */
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 1rem;           /* ~16px base */
+    line-height: 1.5;
+    color: #222;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    font-size: 2.25rem;        /* ~36px */
+    font-weight: bold;
+    margin-bottom: 0.5em;
+  }
+  
+  h2 {
+    font-size: 1.75rem;        /* ~28px */
+    font-weight: bold;
+    margin-bottom: 0.5em;
+  }
+  
+  h3 {
+    font-size: 1.5rem;         /* ~24px */
+    font-weight: bold;
+    margin-bottom: 0.5em;
+  }
+  
+  p, ul, li, a, span {
+    font-size: 1rem;
+    margin-bottom: 1em;
+  }
+  
+  a {
+    color: #0b78a6;            /* Teal-ish accent color */
+    text-decoration: underline;
+    font-weight: 600;
+  }
+  
+  small {
+    font-size: 0.875rem;
+    color: #555;
+  }
+  
+  /* Optional: Button text styling */
+  button, .btn {
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
