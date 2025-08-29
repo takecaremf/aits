@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Affordable Island Transportion services(Template)</title>
+  <title>Affordable Island Transportion services</title>
   <link rel="stylesheet" href="css/style.css">
   <meta name="description" content="Tour operator template based on Affordable Island Transport Services. Replace placeholder text, images and contact details with client's content." />
   <style>
@@ -56,9 +56,10 @@
     <section id="home" class="hero">
       <div class="container hero-grid">
         <div>
-          <h1>Unforgettable tours!</h1>
+          <h1 class="hero-title">Discover Bermuda's Beauty</h1>
+          <h2>Unforgettable tours!</h2>
+          <img src="https://rayhaber.com/wp-content/uploads/2023/10/Bermuda-Adalari-Seyahatinde-Gorulecek-Yerler-ve-Dikkat-Edilecekler.jpeg" alt="Beautiful Bermuda Beach" class="hero-img">
           <p><em>Minibus tours leaving from Heritage Wharf & King's Wharf ONLY. All tours start 9am — if the ship is late tours will start 1 hour after arrival. Refund up until 48 hours before tour.</em></p>
-
           <div class="card">
             <h2>Exclusive Bermuda Experiences</h2>
             <p style="color:var(--muted)">Convenient & timely service, comfortable air-conditioned minibuses & taxis, breathtaking views — perfect for families & groups.</p>
@@ -86,6 +87,10 @@
             <input type="number" min="1" value="1" style="width:100%;padding:8px;margin-bottom:12px" />
             <button type="submit" style="width:100%;padding:10px;border-radius:8px;border:0;background:var(--accent);color:#fff;font-weight:700">Request Booking</button>
           </form>
+
+          <div id="bookingCounter" style="margin-top: 12px; padding: 10px; text-align:center; font-weight:600; color:var(--accent); background:#f4f8fb; border-radius:8px;">
+  Total Bookings: <span id="counterValue">0</span>
+</div>
         </aside>
       </div>
     </section>
@@ -161,7 +166,6 @@
       <div style="color:var(--muted)">Designed for client — replace with actual company details</div>
     </div>
   </footer>
-
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
     document.getElementById('bookingForm').addEventListener('submit', function(e){
