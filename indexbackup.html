@@ -63,43 +63,13 @@
     <section id="home" class="hero">
       <div class="container hero-grid">
         <div>
-
-    <!-- Your swiper slides here -->
-  </div>
-
-  <!-- Agoda-style Booking Floater -->
-  <aside class="booking-floater">
-    <h3>Book a Tour</h3>
-    <form id="bookingForm">
-      <div>
-        <label for="tour">Tour</label>
-        <select name="tour" id="tour">
-          <option>Bermuda Crystal Caves 5-Hour Tour — $59.99 Adults | $49.99 Kids</option>
-          <option>Bermuda Beach Hop Tour — $64.99 Adults | $49.99 Kids</option>
-        </select>
-      </div>
-
-      <div>
-        <label for="date">Date</label>
-        <input type="date" name="date" id="date" />
-      </div>
-
-      <div>
-        <label for="passengers">Passengers</label>
-        <input type="number" name="passengers" id="passengers" min="1" value="1" />
-      </div>
-
-      <div>
-        <button type="submit">Request Booking</button>
-      </div>
-    </form>
-  </aside>
-</section>
-
-          <h1 style="text-align:center; margin-bottom:20px;">🌴 Discover Bermuda's Beauty 🌴</h1>
+          <h1 style="text-align:center; margin-bottom:20px;">Discover Bermuda's Beauty</h1>
           <h2 style="text-align:center; margin-bottom:20px;">Unforgettable tours!</h2>
           <section class="slideshow container">
 
+<section class="slideshow">
+  <h2 style="text-align:center; margin-bottom:20px;">Bermuda Paradise Views 🌴</h2>
+  
   <div class="swiper mySwiper">
     <div class="swiper-wrapper">
       <div class="swiper-slide">
@@ -134,7 +104,6 @@
       </div>
     </div>
 
-
     <!-- Pagination Dots -->
     <div class="swiper-pagination"></div>
 
@@ -143,63 +112,66 @@
     <div class="swiper-button-next"></div>
   </div>
 </section>
-          <section id="tour-note" class="container">
-  <p style="color:var(--muted)">
-    <em>
-      Minibus tours leaving from Heritage Wharf & King's Wharf ONLY.  
-      All tours start 9am — if the ship is late tours will start 1 hour after arrival.  
-      *Tour operator will have AITS sign for passengers.
-    </em>
-  </p>
-</section>
-
-          <section id="experiences" class="container">
-  <h2>Exclusive Bermuda Experiences</h2>
-  <div class="card" style="padding:20px; border-radius:12px; background:#fff; box-shadow:0 4px 12px rgba(0,0,0,0.08)">
-  <p>
-    Convenient & timely service, comfortable air-conditioned minibuses & vans, breathtaking views — perfect for families & groups.
-  </p>
-
-  <ul>
-    <li>Convenient & Timely Service</li>
-    <li>Comfortable & Air-Conditioned Minibuses & Vans</li>
-    <li>Breathtaking Views</li>
-  </ul>
+          <p class="tour-note"></p>
+          <p><em>Minibus tours leaving from Heritage Wharf & King's Wharf ONLY. All tours start 9am — if the ship is late tours will start 1 hour after arrival. *Tour operator will have AITS sign for passengers.</em></p>
+          </p>
+          <div class="card">
+            <h2>Exclusive Bermuda Experiences</h2>
+            <p style="color:var(--muted)">Convenient & timely service, comfortable air-conditioned minibuses & vans, breathtaking views — perfect for families & groups.</p>
+            <ul>
+              <li>Convenient & Timely Service</li>
+              <li>Comfortable & Air-Conditioned Mini buses & Vans</li>
+              <li>Breathtaking Views</li>
+            </ul>
+            <h2>Important Tour Information</h2>
+            <p style="color:var(--muted)">Group Size</p>
+            <ul>
+              <li>Minimum group size required for each tour (14-18 people)</li>
+              <li>Couples encouraged to invite others for group booking</li>
+            </ul>  
+            <p style="color:var(--muted)">Booking Details</p>
+            <ul>
+              <li>$10 per person deposit required (refundable up to 48 hours prior)</li> 
+              <li>Confirmation sent with</li>
+            <ul style="list-style-type: '- ';">
+              <li>Number of seats booked</li>
+              <li>Local contact information</li>
+              <li>Bus number</li>
+              <li>Tour guide's name</li>
+            </ul>
+            </ul>
+          </div>
+        </div>
+        <aside class="card">
+          <h3>Book a Tour</h3>
+          <p style="margin:6px 0;color:var(--muted)">Select a tour and contact us to reserve seats. We can accommodate group bookings.</p>
+          <form id="bookingForm">
+            <label style="display:block;margin-bottom:8px; font-weight:600">Tour</label>
+            <select name="tour" style="width:100%;padding:8px;margin-bottom:8px">
+              <option>Bermuda Crystal Caves 5-Hour Tour — $59.99pp Adults | $49.99 Kids (12 & Under)</option>
+              <option>Bermuda Beach Hop Tour $64.99 Adults | $49.99 Kids (12 & Under)</option>
+            </select>
+            <label style="display:block;margin-bottom:8px; font-weight:600">Date</label>
+            <input type="date" name="date" style="width:100%;padding:8px;margin-bottom:8px" />
+            <label style="display:block;margin-bottom:8px; font-weight:600">Passengers</label>
+            <input type="number" min="1" value="1" style="width:100%;padding:8px;margin-bottom:12px" />
+            <button type="submit" style="width:100%;padding:10px;border-radius:8px;border:0;background:var(--accent);color:#fff;font-weight:700">Request Booking</button>
+          </form>
+          <div id="bookingCounter" style="margin-top: 12px; padding: 10px; text-align:center; font-weight:600; color:var(--accent); background:#f4f8fb; border-radius:8px;">
+  Total Bookings: <span id="counterValue">0</span>
   </div>
+        </aside>
+      </div>
+    </section>
 
-  <h2>Important Tour Information</h2>
-  <div class="card" style="padding:20px; border-radius:12px; background:#fff; box-shadow:0 4px 12px rgba(0,0,0,0.08)">
-  <p>Group Size</p>
-  <ul>
-    <li>Minimum group size required for each tour (14-18 people)</li>
-    <li>Couples encouraged to invite others for group booking</li>
-  </ul>
-  
-  <p style="color:var(--muted)">Booking Details</p>
-  <ul>
-    <li>$10 per person deposit required (refundable up to 48 hours prior)</li>
-    <li>Confirmation sent with:</li>
-    <ul style="list-style-type: '- ';">
-      <li>Number of seats booked</li>
-      <li>Local contact information</li>
-      <li>Bus number</li>
-      <li>Tour guide's name</li>
-    </ul>
-  </ul>
-  </div>
-</section>
-
-    
     <section id="about" class="container">
       <h2>About Us</h2>
-     <div class="card" style="padding:20px; border-radius:12px; background:#fff; box-shadow:0 4px 12px rgba(0,0,0,0.08)">
-      <p>Welcome to our premier tour company in Bermuda! With over 20 years of touring experience, we offer planned 6-hour and 5-hour tours. Our mission is to provide you with a seamless experience and unforgettable memories. For more booking and inquiries feel free to message us at affordableislandtransport@gmail.com</p>
-    </div>
+      <p style="color:var(--muted)">Welcome to our premier tour company in Bermuda! With over 20 years of touring experience, we offer planned 6-hour and 5-hour tours. Our mission is to provide you with a seamless experience and unforgettable memories. For more booking and inquiries feel free to message us at affordableislandtransport@gmail.com</p>
     </section>
 
     <section id="services" class="container">
-      <h2>Services</h2>
-      <div class="services">
+  <h2>Services</h2>
+  <div class="services">
 
   <!-- CRYSTAL CAVES TOUR -->
 <article class="card service">
@@ -333,12 +305,10 @@
   </iframe>
 </div>
 
-  <footer>
+    <footer>
   <p>Affordable Island Transport Services, Bermuda Tours is part of AITS Travel Group, a trusted provider of tours and travel services in Bermuda.</p>
   <p>Copyright © 2025 AITS Bermuda Tours™. All rights reserved.</p>
 </footer>
-
-
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
     document.getElementById('bookingForm').addEventListener('submit', function(e){
